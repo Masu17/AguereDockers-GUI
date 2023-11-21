@@ -38,6 +38,22 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.vaadin.external.google</groupId>
+            <artifactId>android-json</artifactId>
+            <version>0.0.20131108.vaadin1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.30</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.11.2</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -61,7 +77,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.aguerecoders.agueredockergui/com.aguerecoders.agueredockergui.HelloApplication
+                                com.aguerecoders.agueredockergui/com.aguerecoders.agueredockergui.MainApp
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

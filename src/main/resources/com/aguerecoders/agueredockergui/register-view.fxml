@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="700.0" minWidth="1200.0" prefHeight="700.0" prefWidth="1200.0" stylesheets="@../stylesheets/Menu.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aguerecoders.agueredockergui.controllers.RegisterController">
+   <TextField fx:id="emailTextField1" layoutX="92.0" layoutY="240.0" prefHeight="40.0" prefWidth="311.0" promptText="Inserte su email" styleClass="textFields" />
+    <TextField fx:id="userNameTextField" layoutX="92.0" layoutY="334.0" prefHeight="40.0" prefWidth="311.0" promptText="Inserte su usuario" styleClass="textFields" />
+    <TextField fx:id="pwTextField" layoutX="92.0" layoutY="428.0" prefHeight="40.0" prefWidth="311.0" promptText="Inserte su contraseña" styleClass="textFields" />
+    <ImageView id="ImageWaves" fx:id="waveImage" fitHeight="700.0" fitWidth="709.0" layoutX="511.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../images/olas.jpg" />
+    </ImageView>
+   <Label layoutX="92.0" layoutY="213.0" text="Email">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+    <Label layoutX="92.0" layoutY="304.0" text="Usuario">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="92.0" layoutY="401.0" text="Contraseña">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Button id="loginBttn" layoutX="92.0" layoutY="494.0" mnemonicParsing="false" onAction="#registerActionBttn" prefHeight="40.0" prefWidth="311.0" text="Registrarse" />
+    <Label fx:id="returnLogIn" layoutX="142.0" layoutY="550.0" onMouseClicked="#returnMainMenu" prefHeight="16.0" prefWidth="211.0" styleClass="links" text="Ya tienes cuenta, Inicia sesion!" />
+    <Circle layoutX="235.0" layoutY="113.0" radius="72.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+        <fill>
+            <RadialGradient centerX="0.75" centerY="0.35714285714285715" radius="0.5">
+                <stops>
+                    <Stop>
+                        <color>
+                            <Color green="0.5176470875740051" blue="1.0" opacity="0.9599999785423279" />
+                        </color>
+                    </Stop>
+                    <Stop offset="1.0">
+                        <color>
+                            <Color red="0.24884259700775146" green="0.2361111044883728" blue="1.0" />
+                        </color>
+                    </Stop>
+                </stops>
+            </RadialGradient>
+        </fill>
+    </Circle>
+    <ImageView fitHeight="206.0" fitWidth="422.0" layoutX="644.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../images/AguereDockersLogo.png" />
+    </ImageView>
+    <ImageView fitHeight="93.0" fitWidth="93.0" layoutX="189.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../images/DockerWhale.png" />
+    </ImageView>
+</AnchorPane>

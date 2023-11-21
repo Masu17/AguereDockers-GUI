@@ -1,0 +1,41 @@
+*{
+    -fx-font-family: "com/aguerecoders/fonts/TommyBold.otf" ;
+    -fx-text-fill: #000000;
+}
+
+.root{
+    -fx-background-color: #ffffff;
+}
+
+#ImageWaves{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+    -fx-background-radius: 5;
+}
+
+
+.links{
+    -fx-font-size: 13px;
+    -fx-text-fill: #002abf;
+    -fx-underline: true;
+}
+
+.links:hover{
+    -fx-text-fill: #002384;
+}
+
+#loginBttn{
+    -fx-background-color: #002384;
+    -fx-background-radius: 5;
+    -fx-font-size: 18px;
+    -fx-text-fill: #ffffff;
+}
+
+#loginBttn:hover{
+    -fx-background-color: #002abf;
+}
+
+.textFields{
+    -fx-background-color: #ffffff;
+    -fx-border-color: rgb(128, 128, 128);
+    -fx-border-width: 0 0 2px 0;
+}
