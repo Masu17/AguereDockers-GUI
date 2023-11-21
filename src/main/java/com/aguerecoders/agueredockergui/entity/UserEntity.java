@@ -6,9 +6,12 @@ import lombok.Getter;
 public class UserEntity {
 
     private long id;
-    private final String name;
-    private final String email;
-    private final String password;
+    private String name;
+    private String email;
+    private String password;
+
+    public UserEntity() {
+    }
 
     public UserEntity(long id, String name, String email, String password) {
         this.id = id;
